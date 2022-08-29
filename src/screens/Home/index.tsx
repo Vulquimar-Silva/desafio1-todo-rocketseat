@@ -7,7 +7,7 @@ import imgLogo from '../../assets/img/png/Logo.png'
 import imgLayerButton from '../../assets/img/png/Layer.png'
 import imgClipboard from '../../assets/img/png/Clipboard.png'
 
-import { Tasks } from '../../components/Tasks';
+import { ButtonRemove } from '../../components/ButtonRemove';
 
 export function Home() {
 
@@ -90,7 +90,7 @@ export function Home() {
           data={tasks}
           keyExtractor={item => item}
           renderItem={({ item }) => (
-            <Tasks
+            <ButtonRemove
               key={item}
               name={item}
               onRemove={() => handleTaskRemove(item)}
